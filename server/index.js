@@ -1,4 +1,5 @@
 const express = require('express');
+require("dotenv").config();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const Video = require('./models/Video');
@@ -9,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb+srv://suraj:suraj@cluster0.gfb4i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true}, 
   ()=>{
