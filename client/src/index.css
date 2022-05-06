@@ -1,0 +1,15 @@
+body{
+  background-color: #cce6ff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.title-container{
+  background-color:white;
+  border: 4px double black;
+  border-radius: 30px;
+  margin: 15px;
+}
